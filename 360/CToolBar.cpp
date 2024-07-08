@@ -3,8 +3,7 @@
 
 CToolBar::CToolBar(QWidget* parent) :buttonGroup(new QButtonGroup(this))
 {
-	this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint);
-	this->setStyleSheet("QWidget{background-color:rgb(20, 201, 113)}");
+
 	initUI();
 }
 
@@ -17,14 +16,17 @@ void CToolBar::initUI()
 {		
 	this->setContentsMargins(0,0,0,0);
 	this->setMouseTracking(true);
+	
 
 	    m_pMyPC = new CToolButton("我的电脑", ":/toolbutton/resources/diannaotijian.svg", this);
-	    m_pTHK = new CToolButton("木马查杀", ":/toolbutton/resources/diannaotijian.svg", this);
+	    m_pTHK = new CToolButton("木马查杀", ":/mainwindow/resources/THK.svg", this);
 	    m_pPCC = new CToolButton("电脑清理", ":/toolbutton/resources/diannaotijian.svg", this);
 	    m_pSystemFix = new CToolButton("系统修复", ":/toolbutton/resources/diannaotijian.svg", this);
 	    m_pOA = new CToolButton("优化加速", ":/toolbutton/resources/diannaotijian.svg", this);
 	    m_pFunction = new CToolButton("功能大全", ":/toolbutton/resources/diannaotijian.svg", this);
 	    m_pSolftWareManager = new CToolButton("软件管家", ":/toolbutton/resources/diannaotijian.svg", this);
+
+		m_pMyPC->setChecked(true);
 
 		buttonGroup->addButton(m_pMyPC);
 		buttonGroup->addButton(m_pTHK);
@@ -33,6 +35,8 @@ void CToolBar::initUI()
 		buttonGroup->addButton(m_pOA);
 		buttonGroup->addButton(m_pFunction);
 		buttonGroup->addButton(m_pSolftWareManager);
+
+	
 
 		buttonGroup->setExclusive(true);
 
@@ -46,7 +50,7 @@ void CToolBar::initUI()
 		toolLayout->addWidget(m_pFunction);
 		toolLayout->addWidget(m_pSolftWareManager);
 
-
+		this->setStyleSheet("QWidget { background-color: rgb(20, 201, 133) }");
 		this->setLayout(toolLayout);
 
 

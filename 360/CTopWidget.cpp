@@ -15,6 +15,8 @@ CTopWidget::~CTopWidget()
 void CTopWidget::initUI()
 {
 	this->setStyleSheet("QWidget{background-color:rgb(20, 201, 113)}");
+	this->setStyleSheet("QWidget{background-color:black}");
+	//this->setStyleSheet("QWidget { background-color: rgba(0, 0, 0, 0); }");
 	this->setContentsMargins(0,0,0,0);
 
 	QVBoxLayout* topWidgetLayout = new QVBoxLayout(this);

@@ -7,13 +7,20 @@ class CToolButton :
 	Q_OBJECT
 
 public:
-	CToolButton(QString text, QString icon, QWidget* parent=nullptr);
+	CToolButton(QString text, QString icon, QWidget* parent = nullptr);
 	~CToolButton();
 
 
 
 signals:
 	void sig_clicked();
+
+
+private slots:
+	void onButtonClicked()
+	{
+		emit sig_clicked();
+	}
 
 private:
 	QString m_text;

@@ -102,24 +102,25 @@
     <QtUic Include="mainwindow.ui" />
     <QtMoc Include="mainwindow.h" />
     <ClCompile Include="CBottomBar.cpp" />
+    <ClCompile Include="CLittleWidget.cpp" />
     <ClCompile Include="CMumaChasha.cpp" />
     <ClCompile Include="CToolBar.cpp" />
     <ClCompile Include="CToolButton.cpp" />
     <ClCompile Include="CFraneLessWidgetBase.cpp" />
     <ClCompile Include="CTitleBar.cpp" />
-    <ClCompile Include="CTopWidget.cpp" />
     <ClCompile Include="customprogressbar.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <QtUic Include="ZTest.ui" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CLittleWidget.h" />
     <QtMoc Include="customprogressbar.h" />
     <QtMoc Include="CToolButton.h" />
     <QtMoc Include="CBottomBar.h" />
     <ClInclude Include="CFraneLessWidgetBase.h" />
     <QtMoc Include="CMumaChasha.h" />
     <QtMoc Include="CToolBar.h" />
-    <QtMoc Include="CTopWidget.h" />
     <QtMoc Include="CTitleBar.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,13 @@
 #include "CToolButton.h"
+#include <qpushbutton.h>
 
 CToolButton::CToolButton(QString text, QString icon, QWidget* parent)
     : QToolButton(parent),
     m_text(text),
     m_icon(icon)
 {
-    this->setFixedSize(80, 80);
+    connect(this, &QPushButton::clicked, this, &CToolButton::onButtonClicked);
+    this->setFixedSize(100, 80);
     this->setIconSize(QSize(45, 45));
     this->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     this->setStyleSheet("QToolButton{border:none;font-size:14px;padding-top:3px;padding-bottom:3px;color:white}"

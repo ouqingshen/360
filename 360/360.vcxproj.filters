@@ -46,9 +46,6 @@
     <ClCompile Include="CTitleBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CTopWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CToolButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -64,9 +61,15 @@
     <ClCompile Include="CMumaChasha.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CLittleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CFraneLessWidgetBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLittleWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -75,9 +78,6 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="CToolButton.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="CTopWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="customprogressbar.h">
@@ -98,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="CMumaChasha.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ZTest.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
